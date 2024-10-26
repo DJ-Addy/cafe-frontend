@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Cafe Food Delivery Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application for cafe food delivery, built using **Spring Boot** for backend APIs, **React** for frontend UI, and **SQL** for data management. The application provides modules for both **Admin** and **Supplier** roles to manage inventory, orders, and customer interactions effectively.
 
-## Available Scripts
+![Cafe Database schema](https://github.com/user-attachments/assets/10efe082-07c5-41f7-a27a-ae31d6b9820d)
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
+- **Customer Module**: Browse food items, place orders, track delivery, and view order history.
+- **Admin Module**: Manage orders, customers, and menu items with full control over the application's content.
+- **Supplier Module**: Handle food inventory and ensure stock availability for smooth operations.
+- **Food Item Customization**: Easily add images, descriptions, prices, and availability statuses for food items.
+- **Secure Authentication**: Role-based access for customers, admins, and suppliers.
+- **Responsive Design**: Optimized for both desktop and mobile experiences.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
+- **Backend**: Java, Spring Boot
+- **Frontend**: React, JavaScript, HTML, CSS
+- **Database**: SQL (MySQL/PostgreSQL)
+- **APIs**: RESTful API design
+- **Storage**: Cloud storage (for food images and media assets)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
+- **Java** 11+
+- **Node.js** 14+
+- **MySQL/PostgreSQL**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend (Spring Boot)
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/food-delivery.git
+    cd food-delivery/backend
+    ```
 
-### `npm run build`
+2. Update the `application.properties` with your database configurations.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the backend:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend (React)
+1. Navigate to the frontend folder:
+    ```bash
+    cd ../frontend
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+3. Start the frontend server:
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
+1. Visit `http://localhost:3000` to access the frontend interface.
+2. Admins and suppliers can log in with their credentials for additional management features.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Homepage
+![HomePage](https://github.com/user-attachments/assets/b881901f-c3ff-49cb-8525-2de5e9c88ecc)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Menu
+![Screenshot 2024-10-26 151307](https://github.com/user-attachments/assets/9555823e-f65c-4384-93a8-9863a2c69ee1)
 
-## Learn More
+## API Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **`/api/orders`** - Order management endpoint.
+- **`/api/foods`** - Manage food items and images.
+- **`/api/users`** - User authentication and role management.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+1. Fork this repository
+2. Create a new branch
+3. Make changes and commit
+4. Submit a pull request for review
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[MIT License](LICENSE)
